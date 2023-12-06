@@ -232,21 +232,22 @@
 
             <div id="results-carousel" class="carousel results-carousel block">
                 <div class="item">
-                    <img src="static/images/figures/fig3_SSS.png" alt="MY ALT TEXT" />
+                    <img src="static/images/figures/data_1.png" alt="MY ALT TEXT" />
                     <h2 class="subtitle has-text-centered">
                         &nbsp;<br />
                         Using refCOCO for base images, we employ an LLM to create a false-premise referring
                         segmentation dataset with similar objects, attributes, and relations. Such paired examples
-                        enable the the creation of specific correction
-                        ground truth that is more specific than baseline methods which simply sample positive and
-                        negative examples. This data allows us to train an
+                        enable the the creation of specific correction ground truth that is more specific than baseline
+                        methods which simply sample positive and negative examples. This data allows us to train an
                         LMM that has robust reasoning reference capabilities.
                     </h2>
                 </div>
                 <div class="item is-vcentered">
-                    <img src="static/images/figures/supp_dataset.png" alt="MY ALT TEXT" />
+                    <img src="static/images/figures/data_2.png" alt="MY ALT TEXT" />
                     <h2 class="subtitle has-text-centered">
-                        Second image description.
+                        Existing datasets such as R-RefCOCO include queries referring to non-existent items in images, but their method of generating negative expressions through naive random sampling often lacks context-awareness. This limitation significantly reduces their effectiveness for false-premise correction tasks. <br/><br/>
+                        
+                        Consider an image with a cat on a chair: contextually valid false premises that could be logically corrected to "a cat on the chair" might include phrases like "a cat under the chair" or "a dog on the chair." However, R-RefCOCO typically produces less suitable examples, such as ``a pizza on the chair” or "a cat behind the people," which do not align with realistic model correction expectations. 
                     </h2>
                 </div>
             </div>
