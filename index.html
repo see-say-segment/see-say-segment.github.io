@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Academic Project Page</title>
+    <title>See, Say and Segment: Teaching LMMs to Overcome False Premises</title>
     <link rel="icon" type="image/x-icon" href="static/images/favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io">
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
@@ -146,26 +146,6 @@
         </div>
     </section>
 
-    <!-- Teaser video-->
-    <section class="hero teaser">
-        <div class="container is-max-desktop">
-            <div class="hero-body">
-                <!-- Your video here -->
-                <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
-                    <source src="static/videos/banner_video.mp4" type="video/mp4">
-                </video> -->
-
-                <img class="img" src="static/images/figures/fig1_SSS.png" style="" />
-                <h2 class="subtitle has-text-centered">
-                    False premise failures with LMMs: contemporary open-source LMMs combined with segmentation decoders
-                    are able to generate referring segments effectively but have difficulty on segmentation questions
-                    which ask the model to refer to something that is not present in the image. SESAME, our
-                    See-Say-Segment LMM, uses model chaining and joint training to overcome this problem.
-                </h2>
-            </div>
-        </div>
-    </section>
-    <!-- End teaser video -->
 
     <!-- Paper abstract -->
     <section class="section hero is-light">
@@ -200,78 +180,95 @@
     <!-- End paper abstract -->
 
 
-    <!-- Image carousel -->
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container">
-                <div id="results-carousel" class="carousel results-carousel">
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            First image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Second image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Third image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Fourth image description.
-                        </h2>
-                    </div>
+
+    <!-- SESAME -->
+    <section class="section  is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full">
+                    <h2 class="title is-2">See, Say and Segment</h2>
+                </div>
+            </div>
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item">
+                    <img src="static/images/figures/fig1_SSS.png"
+                        alt="Figure 1: False Premise Referring Expression Segmentation Examples with prior work and our method." />
+                    <h2 class="subtitle has-text-centered">
+                        Contemporary open-source LMMs combined with segmentation decoders
+                        are able to generate referring segmentations but have difficulty on expressions
+                        which refer to something that is not present in the image. <strong>SESAME</strong>, our
+                        See-Say-Segment LMM, uses joint training to overcome this problem.
+                    </h2>
+                </div>
+                <div class="item is-vcentered">
+                    <img src="static/images/figures/fig2_SSS.png" alt="Figure 2: Diagram of SESAME Model Framework" />
+                    <h2 class="subtitle has-text-centered">
+                        We introduce <strong>a Novel Problem Setting</strong>, requiring LMMs that can See, Say and
+                        Segment. To facilitate training and evaluation of this new class of models, we release <strong>a
+                            new dataset and benchmark, FP-RefCOCO, FP-RefCOCO+ and FP-RefCOCOg</strong>.
+                    </h2>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End image carousel -->
 
 
 
-
-
-    <!-- Video carousel -->
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container">
-                <h2 class="title is-3">Another Carousel</h2>
-                <div id="results-carousel" class="carousel results-carousel">
-                    <div class="item item-video1">
-                        <video poster="" id="video1" autoplay controls muted loop height="100%">
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel1.mp4" type="video/mp4">
-                        </video>
+    <!-- DATASET -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-2">FP-RefCOCO: A Novel Dataset</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            To facilitate training and evaluation of this new class of models, we release <strong>a new
+                                dataset and benchmark, FP-RefCOCO, FP-RefCOCO+ and FP-RefCOCOg</strong>.
+                        </p>
+                        <!-- <img class="img" src="static/images/figures/fig3_SSS.png"> -->
                     </div>
-                    <div class="item item-video2">
-                        <video poster="" id="video2" autoplay controls muted loop height="100%">
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-video3">
-                        <video poster="" id="video3" autoplay controls muted loop height="100%">\
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel3.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                </div>
+            </div>
+
+            <div id="results-carousel" class="carousel results-carousel block">
+                <div class="item">
+                    <img src="static/images/figures/fig3_SSS.png" alt="MY ALT TEXT" />
+                    <h2 class="subtitle has-text-centered">
+                        &nbsp;<br />
+                        Using refCOCO for base images, we employ an LLM to create a false-premise referring
+                        segmentation dataset with similar objects, attributes, and relations. Such paired examples
+                        enable the the creation of specific correction
+                        ground truth that is more specific than baseline methods which simply sample positive and
+                        negative examples. This data allows us to train an
+                        LMM that has robust reasoning reference capabilities.
+                    </h2>
+                </div>
+                <div class="item is-vcentered">
+                    <img src="static/images/figures/supp_dataset.png" alt="MY ALT TEXT" />
+                    <h2 class="subtitle has-text-centered">
+                        Second image description.
+                    </h2>
+                </div>
+            </div>
+
+    </section>
+
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-2">Examples</h2>
+
+                    <img class="img" src="static/images/figures/fig4_cherrypick.png">
+                    <img class="img" src="static/images/figures/supp_cherrypick.png">
+                    <img class="img" src="static/images/figures/supp_say.png">
                 </div>
             </div>
         </div>
     </section>
-    <!-- End video carousel -->
+
+
 
 
 
@@ -279,7 +276,7 @@
 
 
     <!-- Paper poster -->
-    <section class="hero is-small is-light">
+    <!-- <section class="hero is-small is-light">
         <div class="hero-body">
             <div class="container">
                 <h2 class="title">Poster</h2>
@@ -289,7 +286,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
     <!--End paper poster -->
 
 
